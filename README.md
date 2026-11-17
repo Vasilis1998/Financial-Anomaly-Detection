@@ -2,20 +2,21 @@
 
 An end-to-end Machine Learning project for detecting unusual financial transaction volumes using **Databricks, PySpark, Delta Lake, Scikit-learn, and MLflow**.
 
+
 ## Architecture
 
 ```mermaid
 flowchart TD
-    A["Synthetic Financial Data<br/>Python · NumPy · Pandas"]
-    B["Data Processing & Feature Engineering<br/>Databricks · PySpark"]
-    C[("Delta Lake<br/>Raw & Feature Tables")]
-    D["Isolation Forest<br/>Training · Tuning · Evaluation"]
-    E["MLflow<br/>Experiment Tracking"]
-    F["Unity Catalog<br/>Registered Model · Versioning"]
+    A["Synthetic Financial Data"]
+    B["Data Processing & Feature Engineering"]
+    C[("Delta Lake")]
+    D["Isolation Forest"]
+    E["MLflow"]
+    F["Unity Catalog"]
     G["New Batch Transactions"]
-    H["Batch Feature Engineering<br/>PySpark"]
-    I["Anomaly Scoring<br/>Calibrated Threshold"]
-    J[("Delta Lake<br/>Predictions Table")]
+    H["Batch Feature Engineering"]
+    I["Anomaly Scoring"]
+    J[("Delta Lake Predictions Table")]
 
     A --> B
     B --> C
@@ -26,6 +27,8 @@ flowchart TD
     G --> H
     H --> I
     I --> J
+```
+
 
 ## Project Overview
 
