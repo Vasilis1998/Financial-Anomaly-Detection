@@ -2,6 +2,31 @@
 
 An end-to-end Machine Learning project for detecting unusual financial transaction volumes using **Databricks, PySpark, Delta Lake, Scikit-learn, and MLflow**.
 
+## Architecture
+
+```mermaid
+flowchart TD
+    A["Synthetic Financial Data<br/>Python · NumPy · Pandas"]
+    B["Data Processing & Feature Engineering<br/>Databricks · PySpark"]
+    C[("Delta Lake<br/>Raw & Feature Tables")]
+    D["Isolation Forest<br/>Training · Tuning · Evaluation"]
+    E["MLflow<br/>Experiment Tracking"]
+    F["Unity Catalog<br/>Registered Model · Versioning"]
+    G["New Batch Transactions"]
+    H["Batch Feature Engineering<br/>PySpark"]
+    I["Anomaly Scoring<br/>Calibrated Threshold"]
+    J[("Delta Lake<br/>Predictions Table")]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+
 ## Project Overview
 
 This project explores how machine learning can identify anomalous patterns in financial transaction data.
