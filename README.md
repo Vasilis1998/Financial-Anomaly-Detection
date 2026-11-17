@@ -144,7 +144,7 @@ The calibrated threshold identified all five injected anomalies in this demonstr
 
 ## Repository Contents
 
-- `financial_anomaly_detection.ipynb` – Complete Databricks/Jupyter Notebook containing the project workflow.
+- `Financial_Anomaly_Detection.ipynb` – Complete Databricks/Jupyter Notebook containing the project workflow.
 - `README.md` – Project documentation.
 
 ## Author
